@@ -9,6 +9,7 @@ const [term, setTerm] = useState('')
     <View>
       <SearchBar term={term} onTermChange={(newTerm) => setTerm(newTerm)} />
       <Text>SearchScreen</Text>
+      <Text>{term}</Text>
     </View>
   )
 }
