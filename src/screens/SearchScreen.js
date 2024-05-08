@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React, { useState }from 'react'
+import React, { useState } from 'react'
 import SearchBar from '../components/SearchBar'
 
 const SearchScreen = () => {
