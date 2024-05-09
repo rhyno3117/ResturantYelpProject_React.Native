@@ -5,7 +5,7 @@ import yelp from '../api/yelp'
 
 const SearchScreen = () => {
 const [term, setTerm] = useState('');
-const [results, setResults] useState([]);
+const [results, setResults] = useState([]);
 
   return (
     <View>
@@ -15,7 +15,7 @@ const [results, setResults] useState([]);
       onTermSubmit={() => console.log('term was submitted')}
       />
       <Text>SearchScreen</Text>
-      <Text>{term}</Text>
+      <Text>We have found {results.length} results</Text>
     </View>
   )
 }
