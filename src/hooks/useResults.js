@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import yelp from '../api/yelp'
 
 export default () => {
@@ -24,5 +24,7 @@ export default () => {
     useEffect(() => {
         searchApi('pasta')
     }, []);
+
+    
     return [searchApi, results, errorMessage];
 };
