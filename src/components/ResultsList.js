@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
-function ResultsList() {
+function ResultsList({ title }) {
   return (
     <View>
-        <Text>ResultsList</Text>
+        <Text>{title}</Text>
     </View>
   )
 }
