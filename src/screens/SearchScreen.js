@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import SearchBar from '../components/SearchBar'
 import yelp from '../api/yelp'
 
