@@ -8,8 +8,10 @@ const SearchScreen = () => {
   const [term, setTerm] = useState('');
   const [searchApi, results, errorMessage] = useResults();
 
-  const filetResultsByPrice = (price) => {
-    
+  const filterResultsByPrice = (price) => {
+    return results.filter(results => {
+      return results.price === price;
+    });
   };
 
   return (
