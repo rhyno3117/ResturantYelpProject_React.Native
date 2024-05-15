@@ -8,6 +8,10 @@ const SearchScreen = () => {
   const [term, setTerm] = useState('');
   const [searchApi, results, errorMessage] = useResults();
 
+  const filetResultsByPrice = (price) => {
+    
+  };
+
   return (
     <View>
       <SearchBar
@@ -21,7 +25,7 @@ const SearchScreen = () => {
       <ResultsList title="Bit Pricier" />
       <ResultsList title="Big Spender" />
     </View>
-  )
+  ) 
 }
 
 const styles = StyleSheet.create({
