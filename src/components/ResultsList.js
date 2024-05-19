@@ -12,7 +12,11 @@ function ResultsList({ title, results, navigation }) {
                 data={results}
                 keyExtractor={(result) => result.id}
                 renderItem={({ item }) => {
-                    return <ResultsDetail result={item} />
+                    return (
+                        <TouchableOpacity onPress={() => navigation.navigate('ResultsShow')}>
+                    <ResultsDetail result={item} />
+                    </TouchableOpacity>
+                    )
                 }}
             />
         </View>
