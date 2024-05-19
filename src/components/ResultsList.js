@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import ResultsDetail from './ResultsDetail';
 
-function ResultsList({ title, results }) {
+function ResultsList({ title, results, navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>{title}</Text>
