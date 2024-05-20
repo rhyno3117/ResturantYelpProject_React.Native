@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import yelp from '../api/yelp';
 
@@ -6,10 +6,16 @@ const ResultsShowScreen = ({ route }) => {
   const [result, setResult] = useState(null);
   const { id } = route.params;
 
+  console.log(result)
+
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
-    response.data ;
+    setResult(response.data);
   };
+
+  useEffect(() => {
+    getResult(id);
+  }, []);
 
   return (
     <View>
