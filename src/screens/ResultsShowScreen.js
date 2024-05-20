@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const ResultsShowScreen = () => {
-  return <View>
-    <Text>Results Show</Text>
-  </View>
+const ResultsShowScreen = ({ route }) => {
+  const { id } = route.params;
+
+  console.log(id);
+
+  return (
+    <View>
+      <Text>Results Show</Text>
+    </View>
+  );
 };
 
-const styles =  StyleSheet.create({});
+const styles = StyleSheet.create({});
 
-export default ResultsShowScreen
+export default ResultsShowScreen;

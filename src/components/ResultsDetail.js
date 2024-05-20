@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ResultsDetail;
+export default ResultsDetail;2
