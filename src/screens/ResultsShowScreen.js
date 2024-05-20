@@ -6,8 +6,6 @@ const ResultsShowScreen = ({ route }) => {
   const [result, setResult] = useState(null);
   const { id } = route.params;
 
-  console.log(result)
-
   const getResult = async (id) => {
     const response = await yelp.get(`/${id}`);
     setResult(response.data);
@@ -16,6 +14,10 @@ const ResultsShowScreen = ({ route }) => {
   useEffect(() => {
     getResult(id);
   }, []);
+
+  if (!result) {
+    return null;
+  }
 
   return (
     <View>
